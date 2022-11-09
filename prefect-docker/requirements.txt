@@ -1,0 +1,5 @@
+datapane
+plotly
+prefect
+prefect_shell
+pytrends
