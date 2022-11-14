@@ -19,7 +19,8 @@ manifest_path: null
 infrastructure:
   type: docker-container
   env:
-    EXTRA_PIP_PACKAGES: datapane plotly prefect prefect_shell pytrends
+    EXTRA_PIP_PACKAGES: datapane==0.15.1 plotly==5.10.0 prefect>=2.3.2 prefect_shell==0.1.1
+      pytrends==4.8.0
   labels: {}
   name: null
   command: null
@@ -31,14 +32,14 @@ infrastructure:
   auto_remove: false
   volumes: []
   stream_output: true
-  _block_document_id: fb338f42-ba4a-4194-94b7-9cb6c0a05682
+  _block_document_id: d01a56c9-69ae-4ba6-9a8c-d13f29fd39ba
   _block_document_name: google-trends
   _is_anonymous: false
   block_type_slug: docker-container
   _block_type_slug: docker-container
 storage:
   repository: https://github.com/sydneybandi/Data_Pipelines
-  reference: master
+  reference: main
   access_token: null
   _block_document_id: b568f1c2-de4a-4d46-bc74-9edc833090f2
   _block_document_name: pytrends

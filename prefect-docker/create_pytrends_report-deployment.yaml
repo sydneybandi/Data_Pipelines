@@ -19,7 +19,8 @@ manifest_path: null
 infrastructure:
   type: docker-container
   env:
-    EXTRA_PIP_PACKAGES: datapane plotly prefect prefect_shell pytrends
+    EXTRA_PIP_PACKAGES: datapane==0.15.1 plotly==5.10.0 prefect>=2.3.2 prefect_shell==0.1.1
+      pytrends==4.8.0
   labels: {}
   name: null
   command: null
